@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philjot Global Transportation | Professional Group Charter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png">
+    <link rel="manifest" href="asset/site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav>
+    <div class="logo-container">
+        <i class="fa-solid fa-shield-halved logo-icon"></i> 
+        <div class="logo-text">PHILJOT <span>GLOBAL</span>Trans Ltd.</div>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    
+    <ul id="nav-list">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#book" class="nav-btn">Book Now</a></li> 
+    </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <h1>Global Standards in Every Mile.</h1>
+        <p>Premium Transportation for Seminars, Excursions, and Corporate Events.</p>
+        <a href="#book" class="btn-main">Request a Quote</a>
+    </section>
+
+    <section id="book" class="booking-container">
+        <h2>Reserve Your Journey</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Full Name / Organization" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <select title="option" id="serviceType">
+                    <option value="seminar">Corporate Seminar</option>
+                    <option value="excursion">School Excursion</option>
+                    <option value="other">General Meeting/Event</option>
+                </select>
+                <input type="number" id="passengers" min="1" placeholder="Number of Passengers" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="tripDate" id="datePicker" required>
+                <input type="text" id="destination" placeholder="Destination" required>
+            </div>
+            <button type="submit" id="submitBtn">Check Availability</button>
+        </form>
+        <div id="responseMessage"></div>
+    </section>
+
+    <section id="about" class="about-section">
+    <div class="container">
+        <div class="about-header">
+            <h2>About Philjot Global</h2>
+            <p>Setting the standard for premium group transportation.</p>
+        </div>
+
+        <div class="mission-vision-grid">
+            <div class="mv-card">
+                <i class="fa-solid fa-bullseye"></i>
+                <h3>Our Mission</h3>
+                <p>To provide seamless, safe, and professional transportation solutions that empower groups to reach their destinations with comfort and peace of mind.</p>
+            </div>
+            <div class="mv-card">
+                <i class="fa-solid fa-eye"></i>
+                <h3>Our Vision</h3>
+                <p>To become the premier global benchmark for integrated transportation services, recognized for innovation, reliability, and excellence.</p>
+            </div>
+        </div>
+
+        <div class="pilot-values">
+            <h3>The P.I.L.O.T. Framework</h3>
+            <p class="values-intro">Our core values guide every mile we drive.</p>
+            
+            <div class="values-grid">
+                <div class="value-item">
+                    <span class="letter">P</span>
+                    <h4>Punctuality</h4>
+                    <p>Time is our most valuable currency. We arrive early so you're never late.</p>
+                </div>
+                <div class="value-item">
+                    <span class="letter">I</span>
+                    <h4>Integrity</h4>
+                    <p>Honest pricing and transparent communication in every contract.</p>
+                </div>
+                <div class="value-item">
+                    <span class="letter">L</span>
+                    <h4>Luxury of Safety</h4>
+                    <p>Safety is the ultimate luxury. We prioritize it above all else.</p>
+                </div>
+                <div class="value-item">
+                    <span class="letter">O</span>
+                    <h4>Operational Excellence</h4>
+                    <p>World-class maintenance and professional driver training.</p>
+                </div>
+                <div class="value-item">
+                    <span class="letter">T</span>
+                    <h4>Trust</h4>
+                    <p>Building long-term partnerships through consistent reliability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="services" class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <span>Our Expertise</span>
+            <h2>Integrated Transport Solutions</h2>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Corporate Seminars</h3>
+                <p>Punctual, executive-class transport for teams and delegates. We ensure your schedule is respected and your professionals arrive refreshed.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> Wi-Fi Enabled (Optional)</li>
+                    <li><i class="fa-solid fa-check"></i> Multi-point Pickup</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-bus"></i></div>
+                <h3>School Excursions</h3>
+                <p>Safety-first transportation for the next generation. Our drivers are vetted and our vehicles undergo rigorous 20-point safety checks.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> GPS Tracking</li>
+                    <li><i class="fa-solid fa-check"></i> Safety Marshals</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <h3>General Charters</h3>
+                <p>From AGMs to social group tours, we provide flexible, high-capacity vehicles tailored to your specific group size and destination.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> 24/7 Support</li>
+                    <li><i class="fa-solid fa-check"></i> Flexible Itineraries</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-header">
+            <h2>Connect With Our Logistics Team</h2>
+            <p>Ready to move? Let’s discuss your next seminar or excursion.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <a href="tel:+234XXXXXXXXXX" class="contact-card">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+234 XXX XXX XXXX</p>
+                    </div>
+                </a>
+
+                <a href="mailto:bookings@philjotglobal.com" class="contact-card">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>bookings@philjotglobal.com</p>
+                    </div>
+                </a>
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Head Office</h4>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-hours">
+                <h3>Operational Hours</h3>
+                <ul>
+                    <li><span>Mon - Fri:</span> 08:00 AM - 06:00 PM</li>
+                    <li><span>Sat:</span> 09:00 AM - 04:00 PM</li>
+                    <li><span>Sun:</span> Emergency Bookings Only</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="site-footer">
+    <p>&copy; 2026 Philjot Global Transportation Limited. All Rights Reserved.</p>
+    <div class="footer-tagline">Global Standards in Every Mile.</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ham.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Philjot Global</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon-16x16.png">
+    <link rel="manifest" href="asset/site.webmanifest">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="admin-logo">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h1>Logistics Dashboard</h1>
+            </div>
+            <a href="../index.html" class="nav-btn">
+        <i class="fa-solid fa-house-chimney"></i> Exit to Website
+    </a>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Bookings</h3>
+                <p id="total-count">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Quotes</h3>
+                <p id="pending-count">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Next Trip Date</h3>
+                <p id="next-trip">Fetching...</p>
+            </div>
+        </section>
+
+        <main class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Client Details</th>
+                        <th>Service Type</th>
+                        <th>Destination</th>
+                        <th>Travel Date</th>
+                        <th>Pax</th>
+                        <th>Status</th>
+                        <th>Actions</th> </tr>
+                </thead>
+                <tbody id="bookings-table-body">
+                    </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

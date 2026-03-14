@@ -1,0 +1,178 @@
+/* Mobile Menu Toggle Styling */
+.menu-toggle {
+    display: none; /* Hidden on desktop */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show on mobile */
+    }
+
+    #nav-list {
+        display: none; /* Hide links by default on mobile */
+        width: 100%;
+    }
+
+    #nav-list.active {
+        display: flex; /* Show links when toggled */
+    }
+}
+
+.contact-section {
+    padding: 80px 5%;
+    background-color: var(--white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Info takes more space than Hours */
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* Contact Cards */
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-decoration: none; /* Removes underline from <a> */
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transform: translateX(10px);
+}
+
+.contact-card i {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.contact-card h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.contact-card p {
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+/* Operational Hours Styling */
+.contact-hours {
+    background: var(--primary);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-hours h3 {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-hours li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stack on tablet and mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        flex-direction: column; /* Center everything for small phones */
+        text-align: center;
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-5px); /* Change hover effect for mobile */
+    }
+}
+
+
+.site-footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.6);
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-tagline {
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/* Branding Watermark for Sections */
+.watermark-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.watermark-bg::before {
+    content: "PHILJOT GLOBAL";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 31, 63, 0.03); /* Very faint navy */
+    white-space: nowrap;
+    z-index: 0;
+    pointer-events: none; /* Allows clicking through to buttons */
+    user-select: none;    /* Prevents highlighting the text */
+}
+
+/* Ensure content stays above the watermark */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
