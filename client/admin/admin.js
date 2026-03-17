@@ -122,7 +122,7 @@ function contactClient(phone) {
 loadBookings();
 
 async function removeBooking(id) {
-    if (!confirm("Are you sure you want to delete this booking?")) return;
+    if (!confirm("Do you want to delete this booking?")) return;
 
     try {
         const response = await fetch(`http://localhost:5000/api/v1/admin/bookings/${id}`, {
